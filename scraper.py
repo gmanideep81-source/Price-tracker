@@ -13,7 +13,9 @@ chrome_options=webdriver.ChromeOptions()
 driver=webdriver.Chrome(options=chrome_options)
 EMAIL=os.getenv('EMAIL')
 PASSWORD=os.getenv('PASSWORD')
+#product link
 product_link='https://www.flipkart.com/apple-iphone-17-pro-cosmic-orange-256-gb/p/itm76fe37ca9ea8c?pid=MOBHFN6YR8HF5BQ9&marketplace=FLIPKART&lid=LSTMOBHFN6YR8HF5BQ9RBYDOE&q=iphone+17+pro&fm=organic&pageUID=1788615841135'
+#xpath of the price element
 xpath='//*[@id="slot-list-container"]/div/div[2]/div/div/div/div[1]/div/div[2]/div/div[5]/div/div/div/div/div/div/div/div/div/div/div/a[1]/div/div[3]/div'
 Run=True
 def send_email(subject,message):
