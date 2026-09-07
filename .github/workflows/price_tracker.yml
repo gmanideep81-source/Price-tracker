@@ -1,6 +1,8 @@
 name: Price Tracker
 
 on:
+  schedule:
+    - cron: '30 4 * * *'
   workflow_dispatch:
 
 jobs:
@@ -22,7 +24,7 @@ jobs:
 
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@v2
-        
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
