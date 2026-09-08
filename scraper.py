@@ -32,6 +32,7 @@ def send_email(subject,message):
                 )
         connection.close()
 try:
+        driver.set_page_load_timeout(60)
         driver.get(product_link)
         price_element = WebDriverWait(driver, 10).until(
                 EC.visibility_of_element_located((By.XPATH, xpath))
