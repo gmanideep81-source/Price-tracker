@@ -34,12 +34,12 @@ def send_email(subject,message):
 try:
         driver.set_page_load_timeout(60)
         driver.get(product_link)
-        price_element = WebDriverWait(driver, 10).until(
+        price_element = WebDriverWait(driver, 20).until(
                 EC.visibility_of_element_located((By.XPATH, xpath))
                 )
         today_price=float(price_element.text.replace('₹','').replace(',',''))
 except Exception as e:
-        send_email('Scraper failed','Unable to locate element.\nError:{e}')
+        send_email(f'Scraper failed','Unable to locate element.\nError:{e}')
         Run=False
 if Run:
         try:
