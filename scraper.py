@@ -19,7 +19,7 @@ PASSWORD=os.getenv('PASSWORD')
 #product link
 product_link='https://www.flipkart.com/hashtag-fitness-wall-mounting-chin-up-pull-up-bar/p/itm7cf8165415229?pid=BAAFCZG9HWTEAHJV&lid=LSTBAAFCZG9HWTEAHJVZTA7DW&marketplace=FLIPKART&q=pull+up+bar&store=qoc%2Facb%2Fbuq&srno=s_1_13&otracker=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_na&fm=search-autosuggest&iid=38d55cee-f416-42b7-98c5-b1b712742260.BAAFCZG9HWTEAHJV.SEARCH&ppt=sp&ppn=sp&ssid=dnm0li5nsw0000001788955545779&qH=3e005c5dc75a5c66&ov_redirect=true&ov_redirect=true'
 #xpath of the price element
-xpath='//*[@id="slot-list-container"]/div/div[2]/div/div/div/div[1]/div/div[2]/div/div[4]/div/div/div/div/div/div/div/a/div/div[3]/div'
+xpath='//*[@id="slot-list-container"]/div/div[2]/div/div/div/div[1]/div/div[2]/div/div[4]/div/div/div/div/div/div/div/a/div/div[3]/div/'
 Run=True
 def send_email(subject,message):
         connection=smtplib.SMTP('smtp.gmail.com')
